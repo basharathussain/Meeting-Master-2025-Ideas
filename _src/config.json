@@ -1,0 +1,56 @@
+{
+  "video": {
+    "source": 0,
+    "width": 1280,
+    "height": 720,
+    "fps": 30
+  },
+  "detection": {
+    "min_face_size": 40,
+    "scale_factor": 0.709,
+    "confidence_threshold": 0.8,
+    "steps_threshold": [0.6, 0.7, 0.7]
+  },
+  "recognition": {
+    "tolerance": 0.6,
+    "unknown_threshold": 0.4,
+    "model": "hog"
+  },
+  "tracking": {
+    "max_missing_frames": 30,
+    "similarity_threshold": 0.7
+  },
+  "gdrive": {
+    "credentials_path": "credentials.json",
+    "token_path": "token.json",
+    "employee_folder": "employee_photos",
+    "local_dir": "./employee_photos",
+    "auto_download": true
+  },
+  "display": {
+    "window_name": "Video Pipeline - Face Recognition",
+    "show_confidence": true,
+    "show_bounding_boxes": true,
+    "show_statistics": true
+  },
+  "buffers": {
+    "frame_buffer_size": 30,
+    "detection_buffer_size": 10,
+    "recognition_buffer_size": 10,
+    "tracking_buffer_size": 10,
+    "results_buffer_size": 50
+  },
+  "performance": {
+    "enable_gpu": false,
+    "batch_processing": false,
+    "frame_skip": 1,
+    "resize_for_detection": false,
+    "detection_scale": 0.5
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "video_pipeline.log",
+    "max_file_size": "10MB",
+    "backup_count": 5
+  }
+}
