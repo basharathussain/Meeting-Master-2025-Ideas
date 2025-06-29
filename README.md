@@ -140,6 +140,12 @@ python -c "import cv2, face_recognition, mtcnn; print('✅ All libraries install
 
 ### 2. Setup Employee Database
 
+Setup Google Drive (Optional):
+
+Get credentials.json from Google Cloud Console
+Create employee_photos folder in Google Drive
+Add employee photos in subfolders
+
 Create the employee photo directory structure:
 
 ```
